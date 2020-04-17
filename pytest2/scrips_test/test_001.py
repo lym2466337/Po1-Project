@@ -31,9 +31,8 @@ class Test_1():
 
     def wait_ele(self,tag,var):
         if tag=="xpath":
-            return WebDriverWait(self.driver, 5, 0.5).until(lambda x: x.find_element_by_xpath(var))
+            return WebDriverWait(self.driver, 10, 0.5).until(lambda x: x.find_element_by_xpath(var))
         if tag=="id":
-            return WebDriverWait(self.driver, 5, 0.5).until(lambda x: x.find_element_by_id(var))
         if tag=="class":
             return WebDriverWait(self.driver, 5, 0.5).until(lambda x: x.find_element_by_class_name(var))
     #使用插件进行特殊排序  pytest.mark.run(order=x)
