@@ -10,7 +10,7 @@ class Test_A:
     def setup_class(self):
         desired_caps = {
             'platformName': 'Android',  # 被测手机是安卓
-            'platformVersion': '7.1.2',  # 手机安卓版本
+            'platformVersion': '9',  # 手机安卓版本
             'deviceName': 'xxx',  # 设备名，安卓手机可以随意填写
             'appPackage': 'com.android.settings',  # 启动APP Package名称
             'appActivity': '.Settings',  # 启动Activity名称
