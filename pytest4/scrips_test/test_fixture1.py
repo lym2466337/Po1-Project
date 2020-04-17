@@ -18,3 +18,4 @@ class Test_A:
         print("参数a为 %s" % a)
         print("参数b为 %s" % b)
         print("参数c为 %s" % c)
+        print("git多次提交后再一次性推送")

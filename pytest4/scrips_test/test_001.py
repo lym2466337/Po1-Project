@@ -53,6 +53,19 @@ class Test_A:
     # # def test_002(self):
     # #     self.wait_ele("xpath", "//*[contains(@text,'模式')]").click()
     # #     self.wait_ele("xpath", "//*[contains(@text,'低耗')]").click()
+	
+	def test_002(self,index1):
+        print("执行一次 ")
+        self.wait_ele("id", "com.android.settings:id/search").click()
+        input_num = self.wait_ele("id", "android:id/search_src_text")
+        input_num.clear()
+        input_num.send_keys(index1)
+        if index1=='wl':
+            self.wait_ele("xpath","//*[contain(@text,'WLAN直')]").click()
+    #     assert index1==2
+    # # def test_002(self):
+    # #     self.wait_ele("xpath", "//*[contains(@text,'模式')]").click()
+    # #     self.wait_ele("xpath", "//*[contains(@text,'低耗')]").click()
 
 
 if __name__ == '__main__':
